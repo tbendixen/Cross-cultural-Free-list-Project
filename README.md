@@ -3,6 +3,6 @@ Repository for: "Appealing to the minds of gods: A novel cultural evolutionary a
 
 `AppealingMindsOfGods_script.R` is the full annotated analysis script to reproduce the results and figures reported in the main paper and supplements.
 
-`FreeList_CERC_V0.1_FIN.csv` is the full free-list data. See Supplements for a codebook. Note that for eventual future use of the free-list data, we strongly recommend using the dataset stored on the main project repository (https://github.com/bgpurzycki/Evolution-of-Religion-and-Morality), which differs from this dataset only in that the duplicated Hadza data are turned to NAs (see Supplements Section 7 for details).
+`FreeList_CERC_V0.1_FIN.csv` is the full free-list data. See Supplements for a codebook. Note that for eventual future use of the free-list data, we strongly recommend using the dataset stored on the main project repository (https://github.com/bgpurzycki/Evolution-of-Religion-and-Morality), which differs from this dataset only in that the duplicated Hadza data are turned to NAs (see Supplements Section S3 and S7 for details).
 
 `CERC Dataset (Wave 1) Version 6.0.csv` contains demographic information, experimental game data, etc.
