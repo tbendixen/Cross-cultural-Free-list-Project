@@ -9,4 +9,4 @@ Preprint can be found at: https://psyarxiv.com/tjn3e
 
 `FreeList_CERC_V0.1_FIN.csv` is the full free-list data. Note that for eventual future use of the free-list data, we strongly recommend using the dataset stored on the main project repository (https://github.com/bgpurzycki/Evolution-of-Religion-and-Morality), which differs from this dataset only in that the duplicated Hadza data are turned to NAs (see supplementary Section S3 and S7 for details).
 
-`CERC Dataset (Wave 1) Version 6.0.csv` contains demographic information, experimental game data, etc.
+`CERC Dataset (Wave 1) Version 6.0.csv` contains demographic information, experimental game data, etc. For details, see main project repository: https://github.com/bgpurzycki/Evolution-of-Religion-and-Morality.
