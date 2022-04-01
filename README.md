@@ -1,5 +1,5 @@
 # Cross-cultural-Free-list-Project
-Repository for: "Appealing to the minds of gods: A novel cultural evolutionary account of religious appeals and an empirical assessment using ethnographic data from eight diverse societies"
+Repository for: "Appealing to the minds of gods: Religious beliefs and appeals correspond to features of local social ecologies"
 
 Preprint can be found at: https://psyarxiv.com/tjn3e
 
