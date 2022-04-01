@@ -4,7 +4,7 @@
 
 ### Script by: Theiss Bendixen & Benjamin Grant Purzycki
 ### Contact: tb@cas.au.dk
-### Last update: October 26th 2021
+### Last update: April 1st 2022
 
 ### The script follows the order in which each table and figure appear in the main paper, 
 ### followed by supplementary tables and plots.
@@ -26,7 +26,7 @@ data <- read.csv("FreeList_CERC_V0.1_FIN.csv", sep = ";") # free-list data
 cerc <- read.csv("CERC Dataset (Wave 1) Version 6.0.csv", sep = ";") # demographic data
 
 #######################################################
-### Table 1: Demographic and free-list descriptives ###
+### Table 2: Demographic and free-list descriptives ###
 #######################################################
 
 ### Calculate item salience grouped by culture
@@ -490,7 +490,7 @@ colnames(Tab.BGD) <- c("GROUPING", "D/K", "Ecology", "Etiquette", "Food", "Misce
                        "People", "Religion", "Ritual", "Substance Use/Abuse", "Virtue")
 
 Tab.BGD$GROUPING <- c("Coastal Tanna", "Hadza",
-                      "Inland Tanna","Lovu Fiji","Marajó", "Mauritius", 
+                      "Inland Tanna","Lovu Fiji","MarajÃ³", "Mauritius", 
                       "Tyva Republic", "Yasawa Fiji")
 
 ### Extract Smith's S for general codings of Moralistic Gods, Dislikes
@@ -567,7 +567,7 @@ colnames(Tab.POD) <- c("GROUPING", "D/K", "Ecology", "Etiquette", "Food", "Misce
                        "People", "Religion", "Ritual", "Substance Use/Abuse", "Virtue")
 
 Tab.POD$GROUPING <- c("Coastal Tanna", "Hadza",
-                      "Inland Tanna","Lovu Fiji","Marajó", "Mauritius", 
+                      "Inland Tanna","Lovu Fiji","MarajÃ³", "Mauritius", 
                       "Tyva Republic", "Yasawa Fiji")
 
 ### Extract Smith's S for general codings of Police, Dislikes
@@ -617,7 +617,7 @@ TabBGD1 <- t(TabBGD)
 TabBGD1[is.na(TabBGD1)] <- 0 # Food is not listed by any participants in this domain. These NAs are turned into 0s for visualization purposes.
 
 rownames(TabBGD1) <- c("Coastal Tanna", "Hadza",
-                       "Inland Tanna","Lovu Fiji", "Marajó", "Mauritius", 
+                       "Inland Tanna","Lovu Fiji", "MarajÃ³", "Mauritius", 
                        "Tyva Republic", "Yasawa Fiji")
 
 barplot(TabBGD1, beside = TRUE,
@@ -665,7 +665,7 @@ TabPOD <- t(Tab.POD[codelabs])
 TabPOD1 <- t(TabPOD)
 
 rownames(TabPOD1) <- c("Coastal Tanna", "Hadza",
-                       "Inland Tanna","Lovu Fiji","Marajó", "Mauritius", 
+                       "Inland Tanna","Lovu Fiji","MarajÃ³", "Mauritius", 
                        "Tyva Republic", "Yasawa Fiji")
 
 TabPOD1[is.na(TabPOD1)] <- 0 # Food and Religion are not listed by any participants in this domain. These NAs are turned into 0s for visualization purposes.
@@ -765,7 +765,7 @@ colnames(Tab.BGL) <- c("GROUPING", "D/K", "Ecology", "Etiquette", "Food", "Misce
                        "People", "Religion", "Ritual", "Substance Use/Abuse", "Virtue")
 
 Tab.BGL$GROUPING <- c("Coastal Tanna", "Hadza",
-                      "Inland Tanna","Lovu Fiji","Marajó", "Mauritius", 
+                      "Inland Tanna","Lovu Fiji","MarajÃ³", "Mauritius", 
                       "Tyva Republic", "Yasawa Fiji")
 
 ### Extract Smith's S for general codings of Moralistic Gods, Likes
@@ -801,7 +801,7 @@ colnames(Tab.LGL) <- c("GROUPING", "D/K", "Ecology", "Etiquette", "Food", "Misce
                        "People", "Religion", "Ritual", "Substance Use/Abuse", "Virtue")
 
 Tab.LGL$GROUPING <- c("Coastal Tanna", "Hadza",
-                      "Inland Tanna","Marajó", "Mauritius", 
+                      "Inland Tanna","MarajÃ³", "Mauritius", 
                       "Tyva Republic", "Yasawa Fiji") # No Local Gods were identified for Lovu
 
 ### Extract Smith's S for general codings of Local Gods, Likes
@@ -842,7 +842,7 @@ colnames(Tab.POL) <- c("GROUPING", "D/K", "Ecology", "Etiquette", "Food", "Misce
                        "People", "Religion", "Ritual", "Substance Use/Abuse", "Virtue")
 
 Tab.POL$GROUPING <- c("Coastal Tanna", "Hadza",
-                      "Inland Tanna","Lovu Fiji","Marajó", "Mauritius", 
+                      "Inland Tanna","Lovu Fiji","MarajÃ³", "Mauritius", 
                       "Tyva Republic", "Yasawa Fiji")
 
 ### Extract Smith's S for general codings of Police, Likes
@@ -890,7 +890,7 @@ TabBGL <- t(Tab.BGL[codelabs])
 TabBGL1 <- t(TabBGL)
 
 rownames(TabBGL1) <- c("Coastal Tanna", "Hadza",
-                       "Inland Tanna","Lovu Fiji","Marajó", "Mauritius", 
+                       "Inland Tanna","Lovu Fiji","MarajÃ³", "Mauritius", 
                        "Tyva Republic", "Yasawa Fiji")
 
 barplot(TabBGL1, beside = TRUE,
@@ -937,7 +937,7 @@ TabPOL <- t(Tab.POL[codelabs])
 TabPOL1 <- t(TabPOL)
 
 rownames(TabPOL1) <- c("Coastal Tanna", "Hadza",
-                       "Inland Tanna","Lovu Fiji","Marajó", "Mauritius", 
+                       "Inland Tanna","Lovu Fiji","MarajÃ³", "Mauritius", 
                        "Tyva Republic", "Yasawa Fiji")
 
 TabPOL1[is.na(TabPOL1)] <- 0 # Ritual is not listed by any participants in this domain. NAs are turned into 0s for visualization purposes.
