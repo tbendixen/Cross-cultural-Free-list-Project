@@ -4,7 +4,7 @@
 
 ### Script by: Theiss Bendixen & Benjamin Grant Purzycki
 ### Contact: tb@cas.au.dk
-### Last update: April 1st 2022
+### Last update: October 26th 2021
 
 ### The script follows the order in which each table and figure appear in the main paper, 
 ### followed by supplementary tables and plots.
@@ -26,7 +26,7 @@ data <- read.csv("FreeList_CERC_V0.1_FIN.csv", sep = ";") # free-list data
 cerc <- read.csv("CERC Dataset (Wave 1) Version 6.0.csv", sep = ";") # demographic data
 
 #######################################################
-### Table 2: Demographic and free-list descriptives ###
+### Table 1: Demographic and free-list descriptives ###
 #######################################################
 
 ### Calculate item salience grouped by culture
@@ -257,7 +257,7 @@ G.sortnaxe.g <- function(x, y){ # x = FL object, y = threshold
 
 G.cutoff <- .095 # change Smith's S cutoff value
 
-G.columns <- c("Code", "M Salience", "S Salience", "Smiths' S", "n")
+G.columns <- c("Code", "M Salience", "S Salience", "Smith's S", "n")
 
 G.BGL.FL.S$n <- G.BGL.FL.S$SumSalience/G.BGL.FL.S$MeanSalience # number of times each code is listed per site
 G.BGL.SORT <- G.sortnaxe.g(G.BGL.FL.S, G.cutoff) # sorts and cuts Smith's S below cutoff
@@ -315,7 +315,7 @@ sortnaxe.g <- function(x, y){ # x = FL object, y = threshold
 
 cutoff <- .049 # change Smith's S cutoff value
 
-columns <- c("Culture", "Code", "M Salience", "S Salience", "Smiths' S", "n", "N")
+columns <- c("Culture", "Code", "M Salience", "S Salience", "Smith's S", "n", "N")
 
 BGL.FL.S$n <- BGL.FL.S$SumSalience/BGL.FL.S$MeanSalience # number of times each code is listed per site
 BGL.FL.S$N <- BGL.FL.S$SumSalience/BGL.FL.S$SmithsS # total number of free-list participants per site and free-list domain
@@ -435,7 +435,7 @@ G.sortnaxe.g <- function(x, y){ # x = FL object, y = threshold
 
 G.SPEC.cutoff <- .049 # change Smith's S cutoff value
 
-G.columns <- c("Code", "M Salience", "S Salience", "Smiths' S", "n")
+G.columns <- c("Code", "M Salience", "S Salience", "Smith's S", "n")
 
 G.BGL.SPEC.FL.S$n <- G.BGL.SPEC.FL.S$SumSalience/G.BGL.SPEC.FL.S$MeanSalience # number of times each code is listed per site
 G.BGL.SPEC.SORT <- G.sortnaxe.g(G.BGL.SPEC.FL.S, G.SPEC.cutoff) # sorts and cuts Smith's S below cutoff
@@ -625,7 +625,7 @@ barplot(TabBGD1, beside = TRUE,
 
 axis(side = 1, padj = 0.01, labels = xaxis, 
      at = c(5, 14, 23, 32, 41, 50, 59, 68, 77, 86, 95), gap.axis = NA, tick = F, cex.axis = 1.4) # tick marks
-axis(side = 2, labels = "Smiths' S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
+axis(side = 2, labels = "Smith's S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
 text(20, .90, "What angers the moralistic gods?", font = 2, cex = 1.5)
 
 ### Plotting LGD with Codings on X-axis
@@ -643,7 +643,7 @@ barplot(TabLGD1, beside = TRUE,
 axis(side = 1, padj = 0.01, labels = xaxis, 
      at = c(5, 14, 23, 32, 41, 50, 59, 68, 77, 86, 95), gap.axis = NA, tick = F, cex.axis = 1.4) # tick marks
 text(18, .90, "What angers the local gods?", font = 2, cex = 1.5)
-axis(side = 2, labels = "Smiths' S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
+axis(side = 2, labels = "Smith's S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
 
 ax <- 1.75 # size of asterisks
 text(4.5, .02, "*", cex = ax)
@@ -678,7 +678,7 @@ legend(66, 1, rownames(TabBGD1), fill = grey((1:8)/8),
 
 axis(side = 1, padj = 0.01, labels = xaxis, 
      at = c(5, 14, 23, 32, 41, 50, 59, 68, 77, 86, 95), gap.axis = NA, tick = F, cex.axis = 1.4) # tick marks
-axis(side = 2, labels = "Smiths' S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
+axis(side = 2, labels = "Smith's S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
 text(16, .90, "What angers the police?", font = 2, cex = 1.5)
 
 # Print
@@ -898,7 +898,7 @@ barplot(TabBGL1, beside = TRUE,
 
 axis(side = 1, padj = 0.01, labels = xaxis, 
      at = c(5, 14, 23, 32, 41, 50, 59, 68, 77, 86, 95), gap.axis = NA, tick = F, cex.axis = 1.4) # tick marks
-axis(side = 2, labels = "Smiths' S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
+axis(side = 2, labels = "Smith's S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
 text(20, .90, "What pleases the moralistic gods?", font = 2, cex = 1.5)
 
 ### Plotting LGD with Codings on X-axis
@@ -916,7 +916,7 @@ barplot(TabLGL1, beside = TRUE,
 axis(side = 1, padj = 0.01, labels = xaxis, 
      at = c(5, 14, 23, 32, 41, 50, 59, 68, 77, 86, 95), gap.axis = NA, tick = F, cex.axis = 1.4) # tick marks
 text(18, .90, "What pleases the local gods?", font = 2, cex = 1.5)
-axis(side = 2, labels = "Smiths' S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
+axis(side = 2, labels = "Smith's S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
 ax <- 1.75 # size of asterisk
 text(4.5, .02, "*", cex = ax)
 text(13.5, .02, "*", cex = ax)
@@ -950,7 +950,7 @@ legend(66, 1, rownames(TabBGL1), fill = grey((1:8)/8),
 
 axis(side = 1, padj = 0.01, labels = xaxis, 
      at = c(5, 14, 23, 32, 41, 50, 59, 68, 77, 86, 95), gap.axis = NA, tick = F, cex.axis = 1.4) # tick marks
-axis(side = 2, labels = "Smiths' S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
+axis(side = 2, labels = "Smith's S", at = 0.5, tick = F, cex.axis = 1.3, line = 1.5)
 text(16, .90, "What pleases the police?", font = 2, cex = 1.5)
 
 # Print
@@ -1116,7 +1116,7 @@ POD.SPEC.FL.S <- SalienceByCode(FL.SPEC.S, Subj = "CERCID", CODE = "POD_SPEC.L",
 
 cutoff <- .049 # change Smith's S cutoff value
 
-columns <- c("Culture", "Code", "M Salience", "S Salience", "Smiths' S", "n", "N")
+columns <- c("Culture", "Code", "M Salience", "S Salience", "Smith's S", "n", "N")
 
 BGL.SPEC.FL.S$n <- BGL.SPEC.FL.S$SumSalience/BGL.SPEC.FL.S$MeanSalience # number of times each code is listed per site
 BGL.SPEC.FL.S$N <- BGL.SPEC.FL.S$SumSalience/BGL.SPEC.FL.S$SmithsS # total number of free-list participants per site and free-list domain
